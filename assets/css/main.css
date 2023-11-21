@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  background-color: black;
+}
+header nav {
+  width: 85%;
+  margin: auto;
+}
+header .myheaderdiv {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+header .collapseDiv {
+  justify-content: flex-end;
+}
+header .collapseDiv .navli {
+  color: red;
+}
+header .collapseDiv .collapseDiv:hover {
+  color: red;
+}
+header .collapseDiv ul li a {
+  font-weight: 700;
+  color: white;
+}
+header .menuItem {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  header .menuItem {
+    display: block;
+  }
+}
